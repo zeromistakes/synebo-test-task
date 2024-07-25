@@ -41,21 +41,39 @@ const TodoList: React.FC = () => {
     setDraggingItemIndex(null);
   };
 
+  const getNoResultsMessage = () => {
+    switch (filter) {
+      case 'active':
+        return 'You have nothing TO DO :)';
+      case 'completed':
+        return 'No completed todos, try TO DO something :)';
+      case 'all':
+      default:
+        return 'No todos, try to plan something';
+    }
+  };
+
   return (
     <div className={styles.listWrapper}>
-      {filteredTodos.map((todo, index) => (
-        <div
-          className={styles.dndWrapper}
-          key={todo.id}
-          draggable
-          onDragStart={() => handleDragStart(index)}
-          onDragOver={(e) => handleDragOver(e, index)}
-          onDrop={handleDrop}
-        >
-          <TodoListItem {...todo} />
+      {filteredTodos.length > 0 ? (
+        filteredTodos.map((todo, index) => (
+          <div
+            className={styles.dndWrapper}
+            key={todo.id}
+            draggable
+            onDragStart={() => handleDragStart(index)}
+            onDragOver={(e) => handleDragOver(e, index)}
+            onDrop={handleDrop}
+          >
+            <TodoListItem {...todo} />
+          </div>
+        ))
+      ) : (
+        <div className={styles.noResultsMessage}>
+          {getNoResultsMessage()}
         </div>
-      ))}
-      <TodoFooter />
+      )}
+      {!!todos.length && <TodoFooter />}
     </div>
   );
 };

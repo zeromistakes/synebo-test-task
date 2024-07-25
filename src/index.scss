@@ -9,3 +9,15 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --background-color: white;
+  --text-color: #262626;
+  --border-color: #c0c0c0;
+}
+
+[data-theme='DARK'] {
+  --background-color: #363636;
+  --text-color: white;
+  --border-color: #4f4f4f;
+}
