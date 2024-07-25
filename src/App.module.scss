@@ -1,5 +1,3 @@
-
-
 .appWrapper {
   position: relative;
   width: 100%;
@@ -8,7 +6,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 .bgWrapper {
   position: absolute;
@@ -18,7 +17,7 @@
   left: 0;
   background: url('./assets/images/bg-desktop-light.jpg') no-repeat top center;
   background-size: cover;
-  z-index: -1;
+  z-index: 1;
 }
 
 .contentWrapper {
@@ -28,6 +27,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 
 .dndTip {

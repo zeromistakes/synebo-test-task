@@ -1,11 +1,11 @@
 .listItemWrapper {
   width: 100%;
   padding: 16px;
-  background-color: #FFFFFF;
+  background-color: var(--background-color);
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 1px solid #c0c0c0;
+  border-bottom: 1px solid var(--border-color);;
   .itemText {
 
   }
