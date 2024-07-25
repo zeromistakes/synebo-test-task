@@ -1,0 +1,26 @@
+.checkboxWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(
+          to right bottom,
+          hsl(192, 100%, 67%),
+          hsl(280, 87%, 65%)
+  );
+  cursor: pointer;
+  margin-right: 16px;
+  .iconWrapper {
+
+  }
+  .uncheckedWrapper {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+  }
+}

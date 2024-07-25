@@ -1,0 +1,31 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  .itemsLeft {
+    font-size: 12px;
+  }
+
+  .filtersWrapper {
+    display: flex;
+    justify-content: space-between;
+    .filterBtn {
+      cursor: pointer;
+      margin-right: 16px;
+      font-size: 12px;
+      &:hover {
+        color: hsl(220, 98%, 61%);
+      }
+    }
+  }
+
+  .clearBtn {
+    cursor: pointer;
+    font-size: 12px;
+    &:hover {
+      color: hsl(220, 98%, 61%);
+    }
+  }
+}
