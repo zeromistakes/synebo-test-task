@@ -2,24 +2,30 @@ import styles from './todoListItem.module.scss'
 import {FC} from "react";
 import Checkbox from "../Checkbox/Checkbox.tsx";
 import {CrossIcon} from "../../assets/icons/CrossIcon.tsx";
+import useTodoStore from "../../store/useTodoStore.ts";
 
 
 interface ListItemProps {
-  isChecked: boolean;
+  id: number;
+  completed: boolean;
   text: string;
 }
 
 const TodoListItem: FC<ListItemProps> = ({
-                                           isChecked = true,
+                                           id,
+                                           completed,
                                            text = 'Default text'
                                          }) => {
 
+const {toggleTodo, deleteTodo} = useTodoStore()
 
   return (
     <div className={styles.listItemWrapper}>
-      <Checkbox isChecked={isChecked}/>
+      <Checkbox
+        isChecked={completed}
+        onClick={() => toggleTodo(id)}/>
       <p className={styles.itemText}>{text}</p>
-      <div className={styles.deleteBtn}>
+      <div className={styles.deleteBtn} onClick={() => deleteTodo(id)}>
         <CrossIcon/>
       </div>
     </div>
