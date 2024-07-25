@@ -10,6 +10,12 @@
 
   }
   .deleteBtn {
-    opacity: 0;
+    margin-left: auto;
+    opacity: 0.2;
+    transition: opacity .3s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
