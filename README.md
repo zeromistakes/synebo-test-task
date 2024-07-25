@@ -11,7 +11,6 @@ Welcome to the Synebo Todo application! This project showcases my solution to th
 - [Getting Started](#getting-started)
 - [Scripts](#scripts)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
@@ -30,8 +29,9 @@ The challenge specified the following user capabilities:
 - **Filter Todos**: Users should be able to filter todos by all, active, and complete statuses.
 - **Clear Completed**: Users should be able to clear all completed todos.
 - **Bonus Feature**: Users should be able to drag and drop to reorder items on the list.
+- **Dark and Light Theme**: It also includes a light and dark theme toggle feature, I have decided to add this feature because I have seen the sun and moon icons in the provided files.
 
-The project was built using React and TypeScript, with Zustand for state management and Vite for the build tool. It also includes a light and dark theme toggle feature.
+The project was built using React and TypeScript, with Zustand for state management and Vite for the build tool.
 
 ## Technologies Used
 
@@ -76,7 +76,6 @@ Start the development server:
 \```sh
 npm run dev
 \```
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Scripts
 
@@ -108,20 +107,10 @@ synebo-todo/
 └── ...
 \```
 
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-Thank you for checking out the Synebo Todo application! If you have any questions or suggestions, feel free to open an issue or reach out. Happy coding!
+Thank you for checking out! If you have any questions or suggestions, feel free to open an issue or reach out. Happy coding!
