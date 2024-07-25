@@ -1,13 +1,21 @@
-import './App.scss'
+import styles from './App.module.scss'
+import TodoHeader from "./components/TodoHeader/TodoHeader.tsx";
+import TodoInput from "./components/TodoInput/TodoInput.tsx";
+import TodoList from "./components/TodoList/TodoList.tsx";
 function App() {
   return (
-    <>
-    {/*  TODO HEADER*/}
-    {/*  TODO INPUT*/}
-    {/*  TODO LIST*/}
-    {/*  TODO FOOTER*/}
-      123
-    </>
+    <div className={styles.appWrapper}>
+      <div className={styles.bgWrapper}/>
+      <main className={styles.contentWrapper}>
+        <TodoHeader/>
+        <TodoInput/>
+        <TodoList/>
+        {/*  TODO FOOTER*/}
+        <div className={styles.dndTip}>
+          Drag and drop to reorder list
+        </div>
+      </main>
+    </div>
   )
 }
 
