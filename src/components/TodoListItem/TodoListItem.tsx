@@ -17,14 +17,21 @@ const TodoListItem: FC<ListItemProps> = ({
                                            text = 'Default text'
                                          }) => {
 
-const {toggleTodo, deleteTodo} = useTodoStore()
+  const {toggleTodo, deleteTodo} = useTodoStore()
 
   return (
     <div className={styles.listItemWrapper}>
       <Checkbox
         isChecked={completed}
         onClick={() => toggleTodo(id)}/>
-      <p className={styles.itemText}>{text}</p>
+      <p style={
+        {
+          textDecoration: `${completed ? 'line-through' : 'none'}`,
+          opacity: `${completed ? '0.5' : '1'}`,
+        }
+      }
+         className={styles.itemText}>{text}
+      </p>
       <div className={styles.deleteBtn} onClick={() => deleteTodo(id)}>
         <CrossIcon/>
       </div>
