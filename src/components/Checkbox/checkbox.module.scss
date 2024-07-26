@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  width: 28px;
+  min-width: 28px;
   height: 28px;
   background: linear-gradient(
           to right bottom,
@@ -18,8 +18,8 @@
   }
   .uncheckedWrapper {
     position: absolute;
-    width: 26px;
-    height: 26px;
+    min-width: 26px;
+    min-height: 26px;
     background-color: var(--background-color);
     border-radius: 100%;
   }

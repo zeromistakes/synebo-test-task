@@ -28,6 +28,15 @@
   align-items: center;
   justify-content: center;
   z-index: 2;
+  @media (max-width: 1024px) {
+    padding: 10% 20%;
+  }
+  @media (max-width: 768px) {
+    padding: 15% 10%;
+  }
+  @media (max-width: 480px) {
+    padding: 15% 5%;
+  }
 }
 
 .dndTip {

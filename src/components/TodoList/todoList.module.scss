@@ -12,7 +12,11 @@
   .dndWrapper {
     width: 100%;
   }
-
+  .dndWrapper.dragging {
+    transform: scale(1.05);
+    opacity: 0.2;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
   .noResultsMessage {
     padding: 16px;
   }
