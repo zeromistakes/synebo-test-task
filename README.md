@@ -89,22 +89,22 @@ Here are the scripts available in this project:
 ## Project Structure
 
 The project structure is organized as follows:
-
+```
 synebo-todo/
-├── public/                 # Static assets
-├── src/                    # Source files
-│   ├── components/         # React components
-│   ├── styles/             # SCSS stylesheets
-│   ├── store/              # Zustand store
-│   ├── App.tsx             # Main App component
-│   ├── index.tsx           # Entry point
-│   └── ...
-├── .eslintrc.js            # ESLint configuration
-├── tsconfig.json           # TypeScript configuration
-├── vite.config.ts          # Vite configuration
-├── package.json            # Project metadata and dependencies
+├── public/ # Static assets
+├── src/ # Source files
+│ ├── components/ # React components
+│ ├── styles/ # SCSS stylesheets
+│ ├── store/ # Zustand store
+│ ├── App.tsx # Main App component
+│ ├── index.tsx # Entry point
+│ └── ...
+├── .eslintrc.js # ESLint configuration
+├── tsconfig.json # TypeScript configuration
+├── vite.config.ts # Vite configuration
+├── package.json # Project metadata and dependencies
 └── ...
-
+```
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
