@@ -74,11 +74,13 @@ const TodoList: React.FC = () => {
   };
 
   const getNoResultsMessage = () => {
+    const hasTodos = todos.length > 0;
+
     switch (filter) {
       case 'active':
-        return 'You have nothing TO DO :)';
+        return hasTodos ? 'You have nothing TO DO :)' : 'No todos, try to plan something';
       case 'completed':
-        return 'No completed todos, try TO DO something :)';
+        return hasTodos ? 'No completed todos, try TO DO something :)' : 'No todos, try to plan something';
       case 'all':
       default:
         return 'No todos, try to plan something';

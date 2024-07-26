@@ -1,0 +1,20 @@
+// src/components/TodoFilters/todoFilters.module.scss
+.filtersWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .filterBtn {
+    cursor: pointer;
+    margin-right: 16px;
+    font-size: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
+
+
+
+    &:hover, &.active {
+      color: hsl(220, 98%, 61%);
+    }
+  }
+}
