@@ -90,7 +90,6 @@ Here are the scripts available in this project:
 
 The project structure is organized as follows:
 
-\```
 synebo-todo/
 ├── public/                 # Static assets
 ├── src/                    # Source files
@@ -105,7 +104,6 @@ synebo-todo/
 ├── vite.config.ts          # Vite configuration
 ├── package.json            # Project metadata and dependencies
 └── ...
-\```
 
 ## License
 
